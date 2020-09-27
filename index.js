@@ -15,7 +15,7 @@ bot.on("message", (message) => {
     if(message.channel.type === 'dm') return;
     let args = message.content.split(" ");
     let command = args[0];
-    let cmd = CH.getCommand(command);
+    let cmd = CH.getCommand(command.toLowerCase());
     if(!cmd) return;
 
     try{
