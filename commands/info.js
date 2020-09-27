@@ -9,10 +9,8 @@ function get(url) {
 
 module.exports = class Info {
     constructor(){
-        this.desc = 'Get info of Minehut servers.',
-        this.group = ['user'],
         this.name = 'info',
-        this.alias = ['Info', 'server', 'Server'],
+        this.alias = ['server'],
         this.usage = 'info';
     }
     run(bot, message, args) {
